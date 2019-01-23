@@ -7,9 +7,12 @@ function simpleClosure(name){
     function peanutButterandJelly(bread){
       console.log(`no? ok ${name}, see ya later ${bread}.`)
     }
+    peanutButterandJelly('life')
   }
+  cheeseAndCrackers('balls');
 }
 
+simpleClosure('sue')
 
 
 // ==== Challenge 2: Create a counter function ====
