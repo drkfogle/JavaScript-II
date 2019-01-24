@@ -1,10 +1,27 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function simpleClosure(name){
+  console.log(`what up ${name}!`)
+  function cheeseAndCrackers(apple){
+    console.log(`cool ${name}, wanna ${apple} later?`)
+    function peanutButterandJelly(bread){
+      console.log(`no? ok ${name}, see ya later ${bread}.`)
+    }
+    peanutButterandJelly('life')
+  }
+  cheeseAndCrackers('balls');
+}
+
+simpleClosure('sue')
 
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
+  const anotherCounter = counter();
+  anotherCounter();
+  anotherCounter();
+  anotherCounter();
 };
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
